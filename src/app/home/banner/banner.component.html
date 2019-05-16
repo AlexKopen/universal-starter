@@ -1,0 +1,22 @@
+<div class="row no-gutters">
+  <div class="col-lg-8">
+    <img
+      [src]="
+        '../../assets/images/home-page-slide-show/' + homeSlide.imageFileName
+      "
+      [alt]="homeSlide.altText"
+    />
+  </div>
+  <div class="col-lg-4 slide-content">
+    <div class="slide-content-wrapper">
+      <div class="table-wrapper">
+        <h1 [innerText]="homeSlide.title"></h1>
+        <p [innerText]="homeSlide.content"></p>
+        <button
+          [routerLink]="homeSlide.routerLink"
+          [innerText]="homeSlide.buttonText"
+        ></button>
+      </div>
+    </div>
+  </div>
+</div>

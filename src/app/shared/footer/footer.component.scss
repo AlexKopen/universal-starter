@@ -1,0 +1,75 @@
+@import '../../shared/globals';
+
+#footer-wrapper {
+  margin-top: 2em;
+  background: $dark-theme-color;
+  color: $white;
+  padding: 2em 0;
+  text-align: center;
+
+  @media only screen and (min-width: map-get($grid-breakpoints, lg)) {
+    text-align: left;
+    padding: 4em 0;
+  }
+}
+
+.medium-hidden {
+  display: none;
+
+  @media only screen and (min-width: map-get($grid-breakpoints, lg)) {
+    display: inline-block;
+  }
+}
+
+p, img {
+  margin-bottom: 1em !important;
+}
+
+a {
+  color: $white;
+}
+
+h4 {
+  color: $light-theme-color;
+  margin-bottom: 1em !important;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 0.5em !important;
+}
+
+a {
+  color: $white !important;
+
+  &:hover {
+    .social-label {
+      text-decoration: underline;
+    }
+  }
+}
+
+#social-icons {
+  font-size: 24px;
+}
+
+i {
+  width: 28px;
+  margin-right: 0.5em;
+
+  &:hover {
+    color: $light-theme-color;
+  }
+
+  @media only screen and (min-width: map-get($grid-breakpoints, lg)) {
+    margin-right: 0;
+  }
+}
+
+.social-label {
+  margin-left: 10px;
+  font-size: initial;
+}

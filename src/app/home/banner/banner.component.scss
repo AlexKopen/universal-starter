@@ -1,0 +1,89 @@
+@import '../../shared/globals';
+
+img {
+  display: none;
+
+  @media only screen and (min-width: map-get($grid-breakpoints, md)) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.slide-content {
+  background: $dark-theme-color;
+  color: $white;
+
+  @media only screen and (min-width: map-get($grid-breakpoints, lg)) {
+    padding: 0.25em 2em;
+  }
+}
+
+.slide-content-wrapper {
+  height: 100%;
+  display: table;
+  text-align: center;
+  width: 100%;
+  min-height: 305px;
+
+  @media only screen and (min-width: map-get($grid-breakpoints, lg)) {
+    min-height: 241px;
+  }
+
+  @media only screen and (min-width: map-get($grid-breakpoints, lg)) {
+    text-align: left;
+    max-width: 340px;
+    min-height: auto;
+  }
+
+  h1 {
+    font-size: 3rem;
+    display: block;
+
+    @media only screen and (min-width: map-get($grid-breakpoints, md)) {
+      font-size: 2em;
+    }
+
+    @media only screen and (min-width: map-get($grid-breakpoints, xl)) {
+      font-size: 3em;
+    }
+  }
+
+  p, button {
+    margin-top: 2em !important;
+  }
+
+  p {
+    line-height: 2em;
+  }
+
+  p, h1 {
+    padding: 0 10px !important;
+
+    @media only screen and (min-width: map-get($grid-breakpoints, lg)) {
+      padding: 0 !important;
+    }
+  }
+
+  button {
+    width: 10em;
+    height: 2.5em;
+    background: $light-theme-color;
+    color: $white;
+    border: 0;
+    border-radius: 4px;
+    margin-bottom: 1em !important;
+
+    @media only screen and (min-width: map-get($grid-breakpoints, lg)) {
+      margin-bottom: 0 !important;
+    }
+
+    &:hover {
+      color: $dark-theme-color;
+    }
+  }
+
+  .table-wrapper {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

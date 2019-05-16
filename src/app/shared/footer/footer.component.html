@@ -1,0 +1,51 @@
+<div id="footer-wrapper">
+  <div class="container">
+    <div class="row no-gutters">
+      <div class="col-lg">
+        <a [routerLink]="'/'"
+          ><img src="../../../assets/images/logo.png" alt="Reiser Relief"
+        /></a>
+        <p>
+          Reiser Relief, Inc. <br />
+          PO Box 48096 <br />
+          Coon Rapids, MN 55448
+        </p>
+
+        <p>
+          <a href="mailto:info@reiserrelief.org">info@reiserrelief.org</a>
+          <br />
+          <a href="tel:763-280-3433">+1 763.280.3433</a>
+        </p>
+      </div>
+      <div class="col-lg medium-hidden">
+        <h4>Sitemap</h4>
+        <ul>
+          <li *ngFor="let menuItem of menuItems">
+            <a [routerLink]="menuItemAsRoute(menuItem)">{{ menuItem }}</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg">
+        <h4 class="medium-hidden">Social</h4>
+        <p id="social-icons">
+          <a href="https://www.facebook.com/ReiserRelief" target="_blank"
+            ><i class="fab fa-facebook-square"></i
+            ><span class="social-label medium-hidden">Facebook</span></a
+          ><br class="medium-hidden" />
+          <a href="https://instagram.com/reiserrelief/" target="_blank"
+            ><i class="fab fa-instagram"></i
+            ><span class="social-label medium-hidden">Instagram</span></a
+          ><br class="medium-hidden" />
+          <a href="https://www.youtube.com/user/reiserrelief" target="_blank"
+            ><i class="fab fa-youtube"></i
+            ><span class="social-label medium-hidden">YouTube</span></a
+          ><br class="medium-hidden" />
+          <a href="https://reiserreliefjournal.blogspot.com/" target="_blank"
+            ><i class="fab fa-blogger"></i
+            ><span class="social-label medium-hidden">Blogger</span></a
+          ><br class="medium-hidden" />
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
