@@ -21,7 +21,7 @@ import { FooterComponent } from './shared/footer/footer.component';
           loadChildren: './contact/contact.module#ContactModule'
         }
       ],
-      { preloadingStrategy: PreloadAllModules }
+      { preloadingStrategy: PreloadAllModules, initialNavigation: 'enabled' }
     ),
     TransferHttpCacheModule,
     ClickOutsideModule
