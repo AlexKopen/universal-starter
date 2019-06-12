@@ -28,7 +28,7 @@
     "generate:prerender": "cd dist && node prerender",
     "serve:prerender": "cd dist/browser && http-server",
     "serve:ssr": "node dist/server",
-    "deploy": "firebase deploy"
+    "build-and-deploy": "yarn build:prerender && firebase deploy"
   },
   "pre-commit": [],
   "private": true,

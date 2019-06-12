@@ -1,53 +1,26 @@
 # Angular Universal Starter
+This template is an enhanced version of the [Angular Universal Templatate](https://github.com/angular/universal-starter).  This was created to provide some additonal functionality commonly need when creating websites in Angular Universal.  The repository is continuously updated with feature improvements and updates as the original repository is updated.
 
-![Angular Universal](https://angular.io/generated/images/marketing/concept-icons/universal.png)
+## Changes In This Template
+1. A Home, About, and Contact module have been created, each with their own designated routes.
+2. Preloading is enabled, so all routes are loaded and cached when visiting the site for the first time.
+3. Initial navigation is enabled so avoid page flashes when a user visits a newly updated version of the site.
+4. `angular.json` is configured so styles and templates are used when generating a new component; Scss is also set as the default stylesheet.
+5. The root of the e2e project in `angular,json` has been set to "e2e" to avoid cli issues.
+6. Resources have been sharified and placed in the `src/app/shared` directory.
+7. Bootstrap, font-awesome, and animate.css are included in the build process.
+8. Prettier has been included for code formatting.
+9. A responsive header and sidebar have been created, leveraging the ng-click-outside for mobile behavior.
 
-A minimal Angular starter for Universal JavaScript using the [Angular CLI](https://github.com/angular/angular-cli)
-If you're looking for the Angular Universal repo go to [**angular/universal**](https://github.com/angular/universal)
+## Installation
+`yarn`
 
-## Getting Started
+## Development (Client-side only rendering)
+`yarn start`
 
-This demo is built following the [Angular CLI Wiki guide](https://github.com/angular/angular-cli/wiki/stories-universal-rendering)
-
-We're utilizing packages from the [Angular Universal @nguniversal](https://github.com/angular/universal) repo, such as [ng-module-map-ngfactory-loader](https://github.com/angular/universal/modules/module-map-ngfactory-loader) to enable Lazy Loading.
-
----
-
-### Build Time Pre-rendering vs. Server-side Rendering (SSR)
-
-This repo demonstrates the use of 2 different forms of Server-side Rendering.
-
-**Pre-render**
-
-- Happens at build time
-- Renders your application and replaces the dist index.html with a version rendered at the route `/`.
-
-**Server-side Rendering (SSR)**
-
-- Happens at runtime
-- Uses `ngExpressEngine` to render your application on the fly at the requested url.
-
----
-
-### Installation
-
-- `npm install` or `yarn`
-
-### Development (Client-side only rendering)
-
-- run `npm run start` which will start `ng serve`
-
-### Production (also for testing SSR/Pre-rendering locally)
-
-**`npm run build:ssr && npm run serve:ssr`** - Compiles your application and spins up a Node Express to serve your Universal application on `http://localhost:4000`.
-
-**`npm run build:prerender && npm run serve:prerender`** - Compiles your application and prerenders your applications files, spinning up a demo http-server so you can view it on `http://localhost:8080`
-**Note**: To deploy your static site to a static hosting platform you will have to deploy the `dist/browser` folder, rather than the usual `dist`
+## Building for Production
+`yarn build-and-deploy`
+*Note**: To deploy your static site to a static hosting platform you will have to deploy the `dist/browser` folder, rather than the usual `dist`
 
 ## Universal "Gotchas"
-
-Moved to [/angular/universal/blob/master/docs/gotchas.md](https://github.com/angular/universal/blob/master/docs/gotchas.md)
-
-# License
-
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](/LICENSE)
+[Angular Universal Gotchas](https://github.com/angular/universal/blob/master/docs/gotchas.md)
