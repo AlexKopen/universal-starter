@@ -11,6 +11,7 @@ This template is an enhanced version of the [Angular Universal Templatate](https
 7. Bootstrap, font-awesome, and animate.css are included in the build process.
 8. Prettier has been included for code formatting.
 9. A responsive header and sidebar have been created, leveraging the ng-click-outside for mobile behavior.
+10. On page navigation, the user is scrolled to the top of the page.
 
 ## Installation
 ```
