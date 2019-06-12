@@ -23,7 +23,6 @@ img {
   display: table;
   text-align: center;
   width: 100%;
-  min-height: 305px;
 
   @media only screen and (min-width: map-get($grid-breakpoints, lg)) {
     min-height: 241px;

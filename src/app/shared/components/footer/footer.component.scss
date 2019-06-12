@@ -1,16 +1,24 @@
 @import '../../globals';
 
 #footer-wrapper {
-  margin-top: 2em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: $footer-height;
   background: $dark-theme-color;
   color: $white;
-  padding: 2em 0;
+  padding: 0 !important;
   text-align: center;
 
   @media only screen and (min-width: map-get($grid-breakpoints, lg)) {
     text-align: left;
     padding: 4em 0;
   }
+}
+
+#footer-contents {
+  margin-top: 2em;
 }
 
 .medium-hidden {

@@ -1,25 +1,27 @@
 <div id="footer-wrapper">
-  <div class="container">
-    <div class="row no-gutters">
-      <div class="col-lg">
-        <a [routerLink]="'/'"
-          ><img
-            src="../../../../assets/images/logo.png"
-            alt="Logo"
-            class="logo"
-          />
-        </a>
-        <p>
-          Your company
-        </p>
-      </div>
-      <div class="col-lg medium-hidden">
-        <h4>Sitemap</h4>
-        <ul>
-          <li *ngFor="let menuItem of menuItems">
-            <a [routerLink]="menuItemAsRoute(menuItem)">{{ menuItem }}</a>
-          </li>
-        </ul>
+  <div id="footer-contents">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="col-lg">
+          <a [routerLink]="'/'"
+            ><img
+              src="../../../../assets/images/logo.png"
+              alt="Logo"
+              class="logo"
+            />
+          </a>
+          <p>
+            Your company
+          </p>
+        </div>
+        <div class="col-lg medium-hidden">
+          <h4>Sitemap</h4>
+          <ul>
+            <li *ngFor="let menuItem of menuItems">
+              <a [routerLink]="menuItemAsRoute(menuItem)">{{ menuItem }}</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

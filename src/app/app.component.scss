@@ -1,0 +1,5 @@
+@import 'shared/globals';
+
+#router-outlet-wrapper {
+  padding-bottom: $footer-height;
+}
