@@ -1,5 +1,5 @@
 # Angular Universal Starter
-This template is an enhanced version of the [Angular Universal Templatate](https://github.com/angular/universal-starter).  This was created to provide some additonal functionality commonly need when creating websites in Angular Universal.  The repository is continuously updated with feature improvements and updates as the original repository is updated.
+This template is an enhanced version of the [Angular Universal Templatate](https://github.com/angular/universal-starter).  It was created to provide some additonal functionality commonly need when creating websites in Angular Universal.  The repository is continuously updated with feature improvements and updates as the original repository is updated.
 
 ## Changes In This Template
 1. A Home, About, and Contact module have been created, each with their own designated routes.
@@ -13,13 +13,19 @@ This template is an enhanced version of the [Angular Universal Templatate](https
 9. A responsive header and sidebar have been created, leveraging the ng-click-outside for mobile behavior.
 
 ## Installation
-`yarn`
+```
+yarn
+```
 
 ## Development (Client-side only rendering)
-`yarn start`
+```
+yarn start
+```
 
 ## Building for Production
-`yarn build-and-deploy`
+```
+yarn build-and-deploy
+```
 *Note**: To deploy your static site to a static hosting platform you will have to deploy the `dist/browser` folder, rather than the usual `dist`
 
 ## Universal "Gotchas"
