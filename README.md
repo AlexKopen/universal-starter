@@ -1,5 +1,5 @@
 # Angular Universal Starter
-This template is an enhanced version of the [Angular Universal Templatate](https://github.com/angular/universal-starter).  It was created to provide some additonal functionality commonly need when creating websites in Angular Universal.  The repository is continuously updated with feature improvements and updates as the original repository is updated.
+This template is an enhanced version of the [Angular Universal Template](https://github.com/angular/universal-starter).  It was created to provide some additional functionality commonly need when creating websites in Angular Universal.  The repository is continuously updated with feature improvements and updates as the original repository is updated.
 
 ## Changes In This Template
 1. A Home, About, and Contact module have been created, each with their own designated routes.
