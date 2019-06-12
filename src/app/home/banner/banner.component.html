@@ -1,21 +1,13 @@
 <div class="row no-gutters">
   <div class="col-lg-8">
-    <img
-      [src]="
-        '../../assets/images/home-page-slide-show/' + homeSlide.imageFileName
-      "
-      [alt]="homeSlide.altText"
-    />
+    <img src="../../assets/images/banner.jpg" alt="Banner image" />
   </div>
   <div class="col-lg-4 slide-content">
     <div class="slide-content-wrapper">
       <div class="table-wrapper">
-        <h1 [innerText]="homeSlide.title"></h1>
-        <p [innerText]="homeSlide.content"></p>
-        <button
-          [routerLink]="homeSlide.routerLink"
-          [innerText]="homeSlide.buttonText"
-        ></button>
+        <h1>Angular Universal Enhanced</h1>
+        <p>This page is responsive. Try it out!</p>
+        <button [routerLink]="'/about'">About Page</button>
       </div>
     </div>
   </div>
