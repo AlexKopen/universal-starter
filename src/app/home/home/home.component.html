@@ -20,34 +20,9 @@
   </p>
 
   <div class="row" id="fonts">
-    <div class="col-lg-2">
+    <div class="col-lg-2" *ngFor="let iconClass of iconClasses">
       <p>
-        <i class="fab fa-cloudscale"></i>
-      </p>
-    </div>
-    <div class="col-lg-2">
-      <p>
-        <i class="fas fa-laptop-code"></i>
-      </p>
-    </div>
-    <div class="col-lg-2">
-      <p>
-        <i class="fas fa-cloud"></i>
-      </p>
-    </div>
-    <div class="col-lg-2">
-      <p>
-        <i class="fas fa-pencil-ruler"></i>
-      </p>
-    </div>
-    <div class="col-lg-2">
-      <p>
-        <i class="fas fa-chart-pie"></i>
-      </p>
-    </div>
-    <div class="col-lg-2">
-      <p>
-        <i class="fas fa-clock"></i>
+        <i [ngClass]="iconClass"></i>
       </p>
     </div>
   </div>
