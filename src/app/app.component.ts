@@ -1,5 +1,5 @@
 import {Component, Inject, OnInit, PLATFORM_ID} from '@angular/core';
-import { NavigationStart, Router } from '@angular/router';
+import {NavigationStart, Router} from '@angular/router';
 import {isPlatformBrowser} from "@angular/common";
 
 @Component({

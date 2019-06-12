@@ -24,7 +24,7 @@ yarn start
 
 ## Building for Production
 ```
-yarn build-and-deploy
+yarn build
 ```
 *Note**: To deploy your static site to a static hosting platform you will have to deploy the `dist/browser` folder, rather than the usual `dist`
 

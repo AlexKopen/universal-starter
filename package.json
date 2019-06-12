@@ -19,7 +19,7 @@
     "ng": "ng",
     "prettier": "prettier --write \"src/**/*.{js,json,css,md,ts,html,component.html}\"",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "npm run build:prerender ",
     "lint": "ng lint ng-universal-demo",
     "build:client-and-server-bundles": "ng build --prod && ng run ng-universal-demo:server:production",
     "build:prerender": "npm run build:client-and-server-bundles && npm run compile:server && npm run generate:prerender",
@@ -27,8 +27,7 @@
     "compile:server": "tsc -p server.tsconfig.json",
     "generate:prerender": "cd dist && node prerender",
     "serve:prerender": "cd dist/browser && http-server",
-    "serve:ssr": "node dist/server",
-    "build-and-deploy": "yarn build:prerender && firebase deploy"
+    "serve:ssr": "node dist/server"
   },
   "pre-commit": [],
   "private": true,
