@@ -23,6 +23,7 @@ yarn start
 ```
 
 ## Building for Production
+Add all routes to `static.path.ts`.
 ```
 yarn build
 ```
