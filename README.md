@@ -6,7 +6,7 @@ This template is an enhanced version of the [Angular Universal Template](https:/
 2. Preloading is enabled, so all routes are loaded and cached when visiting the site for the first time.
 3. Initial navigation is enabled to avoid page flashes when a user visits a newly updated version of the site.
 4. `angular.json` is configured so external styles and templates are used when generating a new component; Scss is also set as the default stylesheet.
-5. The root of the e2e project in `angular,json` has been set to "e2e" to avoid cli issues.
+5. The root of the e2e project in `angular.json` has been set to "e2e" to avoid cli issues.
 6. Resources have been sharified and placed in the `src/app/shared` directory.
 7. Bootstrap, font-awesome, and animate.css are included in the build process.
 8. Prettier has been included for code formatting.
