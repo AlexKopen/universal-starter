@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
-import { MENU_ITEMS } from '../constants/menu-items.constant';
+import { MENU_ITEMS } from '../../constants/menu-items.constant';
 
 @Component({
   selector: 'app-header',

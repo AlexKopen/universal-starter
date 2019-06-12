@@ -6,7 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  iconClasses = ['fab fa-cloudscale', 'fas fa-laptop-code', 'fas fa-cloud', 'fas fa-pencil-ruler', 'fas fa-chart-pie', 'fas fa-clock'];
+  iconClasses = [
+    'fab fa-cloudscale',
+    'fas fa-laptop-code',
+    'fas fa-cloud',
+    'fas fa-pencil-ruler',
+    'fas fa-chart-pie',
+    'fas fa-clock'
+  ];
 
   constructor() {}
 
