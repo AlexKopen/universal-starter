@@ -12,6 +12,7 @@ This template is an enhanced version of the [Angular Universal Template](https:/
 8. Prettier has been included for code formatting.
 9. A responsive header, sidebar, and footer have been created, leveraging the ng-click-outside for mobile behavior.
 10. On page navigation, the user is scrolled to the top of the page.
+11. The outline is removed on visited li elements.
 
 ## Installation
 ```
